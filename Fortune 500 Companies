@@ -72,5 +72,10 @@ SELECT company_name,avg_employee_tenure,revenue
 FROM fortune_companies 
 WHERE industry="Technology"
 AND avg_employee_tenure>=5
-AND revenue>=400
+AND revenue>=400;
 
+Which company in Healthcare has the most revenue and what is their revenue?
+SELECT company_name, max(revenue)
+FROM fortune_companies
+WHERE industry = 'Healthcare'
+;
